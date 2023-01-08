@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alberto Julio</title>
+
+        <style> /*css for header*/
+            .header {
+                background-color: black;
+                color: white;
+                padding: 10px 16px;
+
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%
+            }
+            .sticky + .content {
+                padding-top: 102px;
+            }
+        </style>
+
+        <style> /*css for buttons*/
+            button {
+                background-color: white;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 10px;
+                display: inline-block;
+                text-align: center;
+                width: 180px;
+                font-size: 28px;
+                cursor: pointer;
+            }
+            button span{
+                cursor: pointer;
+            }
+        </style>
+        <style> /*css for body*/
+            body {
+                background-color: rgb(30, 79, 172);
+                color: white;
+            }
+            .dark-mode {
+                background-color: rgb(39, 38, 38);
+                color: white;
+            }
+            .light-mode{
+                background-color: white;
+                color: black;
+            }
+            img {
+                align: "right";
+            }
+        </style>
+
+    </head>
+        <header>
+            <div class="header" id="myHeader" >
+                <h1>AJC</h1>
+            </div>
+        </header>
+        <body>
+            
+        <img align="right" src="C:/Users/alber/Desktop/power.jpg" alt="">
+            
+        <p>
+            <h1><b>OOGABOOGA</b></h1>
+            <h1>
+                It all started when I was born
+                thats it.
+            </h1>
+
+            <div>
+                <button onclick ="darkMode()">oogabooga</button>
+            </div>
+            <script>
+                function darkMode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+
+            <table>
+                <tr>
+                    <td>lorem</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+
+            <h1>
+                "What if I fall? Oh but my darling, but what if you fly? - Erin Hanson"
+            </h1>
+
+        </p>
+    </body>
+</html>
